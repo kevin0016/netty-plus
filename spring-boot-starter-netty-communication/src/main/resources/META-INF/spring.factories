@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.tigerjoys.onion.communication.server.spring.config.ServerConfiguration

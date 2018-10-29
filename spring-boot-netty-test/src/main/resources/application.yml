@@ -1,0 +1,14 @@
+application:
+  name: spring-onion-test
+
+#数据库
+
+spring:
+  profiles:
+    active: dev
+    
+socket: 
+  server:
+    enable: true
+    port: 9527
+    basePackages: com.itkevin.nettyplus.springbootnettytest.server.command
