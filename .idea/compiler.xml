@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="client-communication" />
+        <module name="communication-message-protocol" />
+        <module name="netty-communication" />
+        <module name="spring-boot-netty-test" />
+        <module name="spring-boot-starter-netty-communication" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-communication" target="1.8" />
+      <module name="communication-message-protocol" target="1.8" />
+      <module name="netty-communication" target="${java_source_version}" />
+      <module name="netty-plus" target="1.8" />
+      <module name="spring-boot-netty-test" target="1.8" />
+      <module name="spring-boot-starter-netty-communication" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

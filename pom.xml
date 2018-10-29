@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itkevin.nettyplus</groupId>
+    <artifactId>netty-communication</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>netty-communication</module>
+        <module>spring-boot-starter-netty-communication</module>
+        <module>spring-boot-netty-test</module>
+        <module>client-communication</module>
+        <module>communication-message-protocol</module>
+    </modules>
+
+    <name>netty-communication-server</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <!-- Common libs -->
+        <fastjson_version>1.2.47</fastjson_version>
+        <netty_version>4.1.12.Final</netty_version>
+        <javassist_version>3.21.0-GA</javassist_version>
+        <!--  -->
+        <commons_lang3_version>3.1</commons_lang3_version>
+        <commons_lang_version>2.4</commons_lang_version>
+        <guava_version>24.1.1-jre</guava_version>
+        <reflections_version>0.9.11</reflections_version>
+        <!-- Log libs -->
+        <logback_version>1.2.3</logback_version>
+        <!-- Test libs -->
+        <junit_version>4.12</junit_version>
+        <mockito_version>2.9.0</mockito_version>
+
+        <!-- Build args -->
+        <argline>-server -Xms64m -Xmx64m -XX:PermSize=64m -XX:MaxPermSize=64m</argline>
+        <skip_maven_deploy>false</skip_maven_deploy>
+        <skip_maven_test>true</skip_maven_test>
+        <project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
+        <!-- for maven compiler plugin -->
+        <java_source_version>1.8</java_source_version>
+        <java_target_version>1.8</java_target_version>
+        <file_encoding>UTF-8</file_encoding>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://repo.didiman.com/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>Snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://repo.didiman.com/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- json -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson_version}</version>
+            </dependency>
+            <!-- netty -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections_version}</version>
+            </dependency>
+            <!--  -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons_lang3_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons_lang_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava_version}</version>
+            </dependency>
+            <!-- log -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback_version}</version>
+            </dependency>
+            <!-- Test libs -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit_version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito_version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>true</addMavenDescriptor>
+                        <index>true</index>
+                        <manifest>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <useSystemClassLoader>true</useSystemClassLoader>
+                    <forkMode>once</forkMode>
+                    <argLine>${argline}</argLine>
+                    <systemProperties>
+                        <!-- common shared -->
+                        <property>
+                            <name>transporter</name>
+                            <value>${transporter}</value>
+                        </property>
+                        <property>
+                            <name>serialization</name>
+                            <value>${serialization}</value>
+                        </property>
+                        <!-- server side -->
+                        <property>
+                            <name>port</name>
+                            <value>${port}</value>
+                        </property>
+                        <property>
+                            <name>threadpool</name>
+                            <value>${threadpool}</value>
+                        </property>
+                        <property>
+                            <name>threads</name>
+                            <value>${threads}</value>
+                        </property>
+                        <property>
+                            <name>iothreads</name>
+                            <value>${iothreads}</value>
+                        </property>
+                        <!-- client side -->
+                        <property>
+                            <name>server</name>
+                            <value>${server}</value>
+                        </property>
+                        <property>
+                            <name>timeout</name>
+                            <value>${timeout}</value>
+                        </property>
+                        <property>
+                            <name>length</name>
+                            <value>${length}</value>
+                        </property>
+                        <property>
+                            <name>connections</name>
+                            <value>${connections}</value>
+                        </property>
+                        <property>
+                            <name>base</name>
+                            <value>${base}</value>
+                        </property>
+                        <property>
+                            <name>concurrent</name>
+                            <value>${concurrent}</value>
+                        </property>
+                        <property>
+                            <name>runs</name>
+                            <value>${runs}</value>
+                        </property>
+                        <property>
+                            <name>onerror</name>
+                            <value>${onerror}</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java_source_version}</source>
+                    <target>${java_target_version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>${skip_maven_deploy}</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
