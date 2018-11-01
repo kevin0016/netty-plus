@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.nettycommunication.core.config;
 
-/**
- * 服务端配置常量
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ServerConstant
+  * @Description:    服务端配置常量
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:25
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:25
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class ServerConstant {
 	
 	/**

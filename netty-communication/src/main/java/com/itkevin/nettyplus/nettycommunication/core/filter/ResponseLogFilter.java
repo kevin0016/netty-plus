@@ -5,7 +5,17 @@ import com.itkevin.nettyplus.communicationmessage.protocol.message.ResponseMessa
 import com.itkevin.nettyplus.nettycommunication.core.context.BeatContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+/**     
+  *
+  * @ClassName:      ResponseLogFilter
+  * @Description:    响应日志过滤
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:32
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:32
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class ResponseLogFilter implements IFilter {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseLogFilter.class);

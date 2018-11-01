@@ -2,11 +2,17 @@ package com.itkevin.nettyplus.nettycommunication.core.filter;
 
 import com.itkevin.nettyplus.nettycommunication.core.context.BeatContext;
 
-/**
- * 请求过滤器
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      IFilter
+  * @Description:    请求过滤器
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:30
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:30
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public interface IFilter {
 	
 	/**

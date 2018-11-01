@@ -5,11 +5,17 @@ import com.itkevin.nettyplus.nettycommunication.utils.IPTable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * IP过滤过滤器
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      IPConnectionFilter
+  * @Description:    IP过滤过滤器
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:30
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:30
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class IPConnectionFilter implements IFilter {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(IPConnectionFilter.class);

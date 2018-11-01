@@ -2,11 +2,17 @@ package com.itkevin.nettyplus.nettycommunication.core.config;
 
 import com.itkevin.nettyplus.nettycommunication.core.hotkey.IProxyFactory;
 
-/**
- * 服务器端配置参数
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      SocketServerConfig
+  * @Description:    服务器端配置参数
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:25
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:25
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class SocketServerConfig {
 	
 	/**
