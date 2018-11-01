@@ -2,7 +2,17 @@ package com.itkevin.nettyplus.communicationmessage.protocol.message;
 
 
 import com.itkevin.nettyplus.communicationmessage.protocol.enums.MessageType;
-
+/**
+  *
+  * @ClassName:      ResponseMessage
+  * @Description:    数据响应体
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:07
+  * @UpdateUser:
+  * @UpdateDate:     18/11/1 下午6:07
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class ResponseMessage extends DefaultMessage {
 	
 	private String body;

@@ -4,12 +4,17 @@ package com.itkevin.nettyplus.communicationmessage.protocol.enums;
 import com.itkevin.nettyplus.communicationmessage.protocol.serialize.ISerialize;
 import com.itkevin.nettyplus.communicationmessage.protocol.serialize.JSONSerialize;
 
-/**
- * 序列化枚举
- * 
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      SerializeType
+  * @Description:    序列化枚举
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:16
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:16
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum SerializeType {
 
 	/**

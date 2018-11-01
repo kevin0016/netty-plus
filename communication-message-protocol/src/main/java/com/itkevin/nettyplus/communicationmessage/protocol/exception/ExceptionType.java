@@ -2,12 +2,17 @@ package com.itkevin.nettyplus.communicationmessage.protocol.exception;
 
 import java.util.HashMap;
 import java.util.Map;
-
-/**
- * 异常返回码
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ExceptionType
+  * @Description:    异常返回码
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:17
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:17
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum ExceptionType {
 	
 	SUCCESS(0 , "成功" , null),

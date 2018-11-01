@@ -16,11 +16,17 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
-/**
- * 协议辅助工具类
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ProtocolHelper
+  * @Description:    协议辅助工具类
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:22
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:22
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class ProtocolHelper {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProtocolHelper.class);

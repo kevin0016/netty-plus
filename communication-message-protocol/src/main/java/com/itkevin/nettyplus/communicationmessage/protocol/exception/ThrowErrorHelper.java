@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.communicationmessage.protocol.exception;
 
-/**
- * 错误辅助类
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ThrowErrorHelper
+  * @Description:    错误辅助类
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:20
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:20
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class ThrowErrorHelper {
 	
 	/**

@@ -4,11 +4,17 @@ package com.itkevin.nettyplus.communicationmessage.protocol.enums;
 import com.itkevin.nettyplus.communicationmessage.protocol.security.ISecurity;
 import com.itkevin.nettyplus.communicationmessage.protocol.security.UnSecurity;
 
-/**
- * 加密类型枚举
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      SecurityType
+  * @Description:    加密类型枚举
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:15
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:15
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum SecurityType {
 	
 	/**

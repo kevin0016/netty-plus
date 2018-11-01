@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.communicationmessage.protocol.enums;
 
-/**
- * 消息来源枚举
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      MessageFromType
+  * @Description:    消息来源枚举
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:14
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:14
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum MessageFromType {
 	
 	UNKNOW(0),

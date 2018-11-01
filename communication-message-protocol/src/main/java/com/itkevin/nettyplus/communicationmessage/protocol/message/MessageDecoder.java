@@ -10,7 +10,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-
+/**     
+  *
+  * @ClassName:      MessageDecoder
+  * @Description:    数据加密
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:05
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:05
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class MessageDecoder extends ByteToMessageDecoder {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(MessageDecoder.class);

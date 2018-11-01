@@ -4,11 +4,17 @@ import com.itkevin.nettyplus.communicationmessage.protocol.message.RequestMessag
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * 服务通信错误
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ServiceFrameException
+  * @Description:    服务通信错误
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:20
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:20
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class ServiceFrameException extends RemoteException {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ServiceFrameException.class);

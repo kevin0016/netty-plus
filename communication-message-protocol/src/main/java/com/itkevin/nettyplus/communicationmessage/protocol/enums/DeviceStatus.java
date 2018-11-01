@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.communicationmessage.protocol.enums;
 
-/**
- * 设备状态枚举
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      DeviceStatus
+  * @Description:    设备状态枚举
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:13
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:13
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum DeviceStatus {
 	
 	UNKNOWN(0),//未知

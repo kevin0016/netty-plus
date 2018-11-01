@@ -15,7 +15,7 @@ import com.itkevin.nettyplus.communicationmessage.protocol.utility.ByteConverter
  *  
  * 尾分界符: 9, 10, 13, 17, 18
  *  
- * @author chengang
+ * @author Kevin
  *
  */
 public class Protocol {

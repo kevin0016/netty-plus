@@ -1,5 +1,15 @@
 package com.itkevin.nettyplus.communicationmessage.protocol.utility;
-
+/**     
+  *
+  * @ClassName:      ByteConverter
+  * @Description:    Kevin写点注释吧。。。
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:22
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:22
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class ByteConverter {
 
 	/**

@@ -5,11 +5,17 @@ import com.itkevin.nettyplus.communicationmessage.protocol.message.*;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 消息描述协议类型
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      MessageType
+  * @Description:    消息描述协议类型
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:14
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:14
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public enum MessageType {
 	
 	Response(1 , ResponseMessage.class),

@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.communicationmessage.protocol;
 
-/**
- * 协议头占位
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ProtocolConst
+  * @Description:    协议头占位
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:23
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:23
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class ProtocolConst {
 	
 	/**

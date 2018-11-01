@@ -1,10 +1,16 @@
 package com.itkevin.nettyplus.communicationmessage.protocol.exception;
 
-/**
- * 远程通信接口异常类
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      RemoteException
+  * @Description:    远程通信接口异常类
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:19
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:19
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public class RemoteException extends Exception {
 	
 	/**

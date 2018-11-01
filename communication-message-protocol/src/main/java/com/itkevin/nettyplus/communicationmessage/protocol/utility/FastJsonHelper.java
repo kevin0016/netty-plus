@@ -8,7 +8,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
-
+/**     
+  *
+  * @ClassName:      FastJsonHelper
+  * @Description:    Kevin写点注释吧。。。
+  * @Author:         Kevin
+  * @CreateDate:     18/11/1 下午6:22
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/1 下午6:22
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+＊*/
 public final class FastJsonHelper {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(FastJsonHelper.class);
