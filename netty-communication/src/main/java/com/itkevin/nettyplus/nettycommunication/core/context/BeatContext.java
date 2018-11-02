@@ -27,7 +27,6 @@ import java.util.Map;
  * @UpdateDate: 18/11/1 下午6:26
  * @UpdateRemark: 更新项目
  * @Version: 1.0
- * ＊
  */
 public class BeatContext {
 
@@ -197,7 +196,7 @@ public class BeatContext {
     /**
      * 返回URL参数，Map不为空
      *
-     * @return Map<String   ,       String>
+     * @return Map<String       ,               String>
      */
     public Map<String, String> getUrlParams() {
         if (urlParams == null) {

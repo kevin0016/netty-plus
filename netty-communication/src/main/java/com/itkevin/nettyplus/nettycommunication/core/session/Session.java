@@ -4,53 +4,64 @@ import com.itkevin.nettyplus.communicationmessage.protocol.enums.DeviceStatus;
 import io.netty.channel.ChannelHandlerContext;
 
 /**
- * session
- * @author chengang
- *
+ * @ClassName: Session
+ * @Description: session
+ * @Author: Kevin
+ * @CreateDate: 18/11/2 下午12:09
+ * @UpdateUser:
+ * @UpdateDate: 18/11/2 下午12:09
+ * @UpdateRemark: 更新项目
+ * @Version: 1.0
  */
 public interface Session {
-	
-	/**
-	 * 获得连接通道
-	 * @return ChannelHandlerContext
-	 */
-	public ChannelHandlerContext getCtx();
 
-	/**
-	 * 获得设备ID
-	 * @return String
-	 */
-	public String getDeviceId();
-	
-	/**
-	 * 获得当前设备状态
-	 * @return DeviceStatus
-	 */
-	public DeviceStatus getDeviceStatus();
-	
-	/**
-	 * 修改当前设备的状态
-	 * @param status - DeviceStatus
-	 */
-	public void setDeviceStatus(DeviceStatus status);
-	
-	/**
-	 * 修改当前设备的状态并且通知客户端
-	 * @param status - DeviceStatus
-	 * @throws InterruptedException
-	 * @throws SessionException
-	 */
-	public void setDeviceStatusNotifyClient(DeviceStatus status) throws InterruptedException, SessionException;
-	
-	/**
-	 * 关闭session
-	 */
-	public void close();
+    /**
+     * 获得连接通道
+     *
+     * @return ChannelHandlerContext
+     */
+    public ChannelHandlerContext getCtx();
 
-	/**
-	 * session是否关闭
-	 * @return boolean
-	 */
-	public boolean isClosed();
+    /**
+     * 获得设备ID
+     *
+     * @return String
+     */
+    public String getDeviceId();
+
+    /**
+     * 获得当前设备状态
+     *
+     * @return DeviceStatus
+     */
+    public DeviceStatus getDeviceStatus();
+
+    /**
+     * 修改当前设备的状态
+     *
+     * @param status - DeviceStatus
+     */
+    public void setDeviceStatus(DeviceStatus status);
+
+    /**
+     * 修改当前设备的状态并且通知客户端
+     *
+     * @param status - DeviceStatus
+     * @throws InterruptedException
+     * @throws SessionException
+     */
+    public void setDeviceStatusNotifyClient(DeviceStatus status) throws InterruptedException, SessionException;
+
+    /**
+     * 关闭session
+     */
+    public void close();
+
+    /**
+     * session是否关闭
+     *
+     * @return boolean
+     */
+    public boolean isClosed();
 
 }

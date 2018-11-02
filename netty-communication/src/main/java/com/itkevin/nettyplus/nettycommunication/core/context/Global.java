@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @ClassName: Global
  * @Description: 全局配置类
  * @Author: Kevin
@@ -21,7 +20,7 @@ import java.util.List;
  * @UpdateDate: 18/11/1 下午6:27
  * @UpdateRemark: 更新项目
  * @Version: 1.0
-＊*/
+ */
 public final class Global {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Global.class);
@@ -65,6 +64,7 @@ public final class Global {
 
     /**
      * 添加初始化接口
+     *
      * @param init - IInit
      */
     public void addInit(IInit init) {
@@ -75,6 +75,7 @@ public final class Global {
 
     /**
      * 添加服务器列表
+     *
      * @param server - IServer
      */
     public void addServer(IServer server) {
@@ -85,6 +86,7 @@ public final class Global {
 
     /**
      * 添加请求过滤器
+     *
      * @param filter - IFilter
      */
     public void addRequestFilter(IFilter filter) {
@@ -99,6 +101,7 @@ public final class Global {
 
     /**
      * 移除请求过滤器
+     *
      * @param filter - IFilter
      */
     public void removeRequestFilter(IFilter filter) {
@@ -109,6 +112,7 @@ public final class Global {
 
     /**
      * 添加应答过滤器
+     *
      * @param filter - IFilter
      */
     public void addResponseFilter(IFilter filter) {
@@ -123,6 +127,7 @@ public final class Global {
 
     /**
      * 移除应答过滤器
+     *
      * @param filter - IFilter
      */
     public void removeResponseFilter(IFilter filter) {
@@ -133,6 +138,7 @@ public final class Global {
 
     /**
      * 添加连接过滤器
+     *
      * @param filter - IFilter
      */
     public void addConnectionFilter(IFilter filter) {
@@ -147,6 +153,7 @@ public final class Global {
 
     /**
      * 移除连接过滤器
+     *
      * @param filter - IFilter
      */
     public void removeConnectionFilter(IFilter filter) {
