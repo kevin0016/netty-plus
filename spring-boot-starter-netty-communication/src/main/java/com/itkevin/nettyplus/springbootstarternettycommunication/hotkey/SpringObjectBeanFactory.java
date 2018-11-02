@@ -6,7 +6,17 @@ import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
-
+/**     
+  *
+  * @ClassName:      SpringObjectBeanFactory
+  * @Description:    spring对象工厂
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 下午2:03
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 下午2:03
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public class SpringObjectBeanFactory implements IObjectBeanFactory {
 	
 	private ConfigurableApplicationContext context;

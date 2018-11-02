@@ -2,11 +2,17 @@ package com.itkevin.nettyplus.springbootstarternettycommunication.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
- * application.yml中的netty服务配置信息
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      ServerProperties
+  * @Description:    application.yml中的netty服务配置信息
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 下午1:44
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 下午1:44
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 @ConfigurationProperties(prefix = "socket.server")
 public class ServerProperties {
 	
