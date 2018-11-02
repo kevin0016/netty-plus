@@ -2,11 +2,18 @@ package com.itkevin.nettyplus.nettycommunication.core.hotkey;
 
 import com.itkevin.nettyplus.communicationmessage.protocol.exception.ServiceFrameException;
 import com.itkevin.nettyplus.nettycommunication.core.context.BeatContext;
-/**
- * 代理实现类
- * @author chengang
- *
- */
+
+/**     
+  *
+  * @ClassName:      IProxyStub
+  * @Description:    代理实现类
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午10:15
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午10:15
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public interface IProxyStub {
 	
 	/**

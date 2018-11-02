@@ -2,11 +2,17 @@ package com.itkevin.nettyplus.nettycommunication.core.hotkey;
 
 import java.util.Map;
 
-/**
- * 代理对象工厂
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      IProxyFactory
+  * @Description:    代理对象工厂
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午10:10
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午10:10
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public interface IProxyFactory {
 	
 	/**

@@ -7,11 +7,17 @@ import com.itkevin.nettyplus.nettycommunication.core.context.BeatContext;
 import com.itkevin.nettyplus.nettycommunication.resolve.ResolveFactory;
 import com.itkevin.nettyplus.nettycommunication.utils.ExceptionFactory;
 
-/**
- * 默认的代理类
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      DefaultProxyStub
+  * @Description:    默认的代理类
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午10:35
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午10:35
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public class DefaultProxyStub implements IProxyStub {
 	
 	private static final Object[] EMPTY_ARGS = new Object[]{};

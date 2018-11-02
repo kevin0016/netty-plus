@@ -10,7 +10,7 @@ package com.itkevin.nettyplus.nettycommunication.core.filter;
   * @UpdateDate:     18/11/1 下午6:28
   * @UpdateRemark:   更新项目
   * @Version:        1.0
-＊*/
+  */
 public enum FilterType {
 	
 	None,

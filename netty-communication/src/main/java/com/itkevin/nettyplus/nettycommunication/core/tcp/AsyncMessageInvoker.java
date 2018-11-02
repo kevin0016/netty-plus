@@ -17,11 +17,17 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.*;
 
-/**
- * 异步执行业务代码并且返回数据
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      AsyncMessageInvoker
+  * @Description:    异步执行业务代码并且返回数据
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午11:55
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午11:55
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public class AsyncMessageInvoker implements IInvokerHandler {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(AsyncMessageInvoker.class);

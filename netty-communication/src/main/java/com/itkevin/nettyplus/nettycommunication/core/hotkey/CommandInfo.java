@@ -10,11 +10,17 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-/**
- * 命令描述
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      CommandInfo
+  * @Description:    命令描述
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午10:12
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午10:12
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public class CommandInfo {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(CommandInfo.class);

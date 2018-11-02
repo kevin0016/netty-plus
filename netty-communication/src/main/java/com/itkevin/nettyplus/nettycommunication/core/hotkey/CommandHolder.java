@@ -9,11 +9,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * 所有的命令集合
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      CommandHolder
+  * @Description:    所有的命令集合
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 上午11:12
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 上午11:12
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public final class CommandHolder {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(CommandHolder.class);
@@ -66,14 +72,16 @@ public final class CommandHolder {
 		LOGGER.info("scan package : " + packageName);
 		
 		Map<String, CommandInfo> commands = new HashMap<>();
-		
+		//反射类获取定义
 		Reflections reflections = new Reflections(packageName);
+		//获取Command标记的类
 		Set<Class<?>> commandClasses = reflections.getTypesAnnotatedWith(Command.class);
 		LOGGER.info("commandClasses is size : " + (commandClasses!=null?commandClasses.size():0));
 		
 		if(commandClasses != null && !commandClasses.isEmpty()) {
 			for(Class<?> clazz : commandClasses) {
 				LOGGER.info("start scan class {}" , clazz.getName());
+				//获取对应的标记的类中的method，不包含继承过来的类
 				for (Method method : clazz.getDeclaredMethods()) {
 					CommandMapping mapping = method.getAnnotation(CommandMapping.class);
 					if (mapping != null) {

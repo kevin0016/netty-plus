@@ -7,11 +7,17 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 所有的远程方法代理集合
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      MethodHolder
+  * @Description:    所有的远程方法代理集合
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 下午12:03
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 下午12:03
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public final class MethodHolder {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(MethodHolder.class);
