@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.tigerjoys.onion.communication.server.spring.config.ServerConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.itkevin.nettyplus.springbootstarternettycommunication.config.ServerConfiguration

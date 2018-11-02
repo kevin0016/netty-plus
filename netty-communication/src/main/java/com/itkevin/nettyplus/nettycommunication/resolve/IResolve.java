@@ -2,11 +2,17 @@ package com.itkevin.nettyplus.nettycommunication.resolve;
 
 import com.itkevin.nettyplus.nettycommunication.core.context.BeatContext;
 
-/**
- * 基础的解析接口
- * @author chengang
- *
- */
+/**     
+  *
+  * @ClassName:      IResolve
+  * @Description:    基础的解析接口
+  * @Author:         Kevin
+  * @CreateDate:     18/11/2 下午12:41
+  * @UpdateUser:     
+  * @UpdateDate:     18/11/2 下午12:41
+  * @UpdateRemark:   更新项目
+  * @Version:        1.0
+  */
 public interface IResolve<T> {
 	
 	/**
