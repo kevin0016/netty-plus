@@ -40,7 +40,7 @@ public class ResponseLogFilter implements IFilter {
             buf.append("Server.Body:").append(request.getBody()).append(",");
         }
         if (response != null) {
-            buf.append("Server.Response:").append(response.getBody()).append(",");
+            buf.append("ggr").append(response.getBody()).append(",");
         }
 
         LOGGER.info(buf.toString());
