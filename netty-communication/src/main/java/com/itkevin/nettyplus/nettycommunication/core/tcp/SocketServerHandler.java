@@ -28,6 +28,7 @@ public class SocketServerHandler extends SimpleChannelInboundHandler<Protocol> {
     private IMessageProcessor messageProcessor;
 
     public SocketServerHandler(IMessageProcessor messageProcessor) {
+
         this.messageProcessor = messageProcessor;
     }
 
