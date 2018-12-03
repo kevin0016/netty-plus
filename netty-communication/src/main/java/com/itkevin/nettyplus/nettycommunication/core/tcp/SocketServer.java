@@ -78,7 +78,6 @@ public class SocketServer implements IServer {
                             IMessageProcessor messageProcessor = new SocketMessageProcessor();
 
                             ChannelPipeline pipeline = ch.pipeline();
-
                             //处理心跳
                             pipeline.addLast(new IdleStateHandler(Global.getInstance().getServiceConfig().getReaderIdleTime(), 0, 0, TimeUnit.SECONDS));
                             pipeline.addLast(new DelimiterBasedFrameDecoder(ProtocolConst.MAX_FRAME_LENGTH, true, Unpooled.copiedBuffer(ProtocolConst.P_END_TAG)));
