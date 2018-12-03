@@ -11,7 +11,7 @@ import java.util.*;
 /**     
   *
   * @ClassName:      FastJsonHelper
-  * @Description:    Kevin写点注释吧。。。
+  * @Description:    JSON工具类
   * @Author:         Kevin
   * @CreateDate:     18/11/1 下午6:28
   * @UpdateUser:     

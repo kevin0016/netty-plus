@@ -2,7 +2,7 @@ package com.itkevin.nettyplus.communicationmessage.protocol.utility;
 /**     
   *
   * @ClassName:      ByteConverter
-  * @Description:    Kevin写点注释吧。。。
+  * @Description:    byte工具类
   * @Author:         Kevin
   * @CreateDate:     18/11/1 下午6:27
   * @UpdateUser:     
