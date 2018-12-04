@@ -334,9 +334,9 @@ public class BeatContext {
     }
 
     /**
-     * 组装请求参数
+     * 包装请求参数
      *
-     * @param msg        - MessageRequest
+     * @param protocol   - MessageRequest
      * @param session    - Session
      * @param serverType - 服务类型
      * @return BeatContext

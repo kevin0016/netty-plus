@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @ClassName: SocketMessageProcessor
- * @Description: 消息处理
+ * @Description: 消息处理（socket 消息 处理器）
  * @Author: Kevin
  * @CreateDate: 18/11/2 下午12:14
  * @UpdateUser:
