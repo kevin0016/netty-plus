@@ -62,7 +62,9 @@ public final class NettyBootstrap {
 
         //阻塞当前线程
         LOGGER.info("+++++++++++++++++++++ server start success!!! +++++++++++++++++++++\n");
-        while (true) Thread.sleep(3600000L);
+        while (true) {
+            Thread.sleep(3600000L);
+        }
     }
 
     /**
@@ -132,6 +134,7 @@ public final class NettyBootstrap {
      */
     private static void registerShutdownEvent() {
         Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
             public void run() {
                 for (IServer server : Global.getInstance().getServerList()) {
                     try {

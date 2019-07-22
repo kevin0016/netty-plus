@@ -73,8 +73,9 @@ public class CommandInfo {
             CtClass cc = pool.get(clazz.getName());
 
             String[] paramTypeNames = new String[method.getParameterTypes().length];
-            for (int i = 0; i < this.paramTypes.length; i++)
+            for (int i = 0; i < this.paramTypes.length; i++) {
                 paramTypeNames[i] = this.paramTypes[i].getName();
+            }
             CtMethod cm = cc.getDeclaredMethod(method.getName(), pool.get(paramTypeNames));
 
             MethodInfo methodInfo = cm.getMethodInfo();

@@ -47,10 +47,12 @@ public class DefaultSession implements Session {
         this.status = DeviceStatus.IDLE;//默认空闲状态
     }
 
+    @Override
     public ChannelHandlerContext getCtx() {
         return ctx;
     }
 
+    @Override
     public String getDeviceId() {
         return deviceId;
     }
@@ -78,6 +80,7 @@ public class DefaultSession implements Session {
         this.status = status;
     }
 
+    @Override
     public void close() {
         closed = true;
         this.status = DeviceStatus.DOWN;

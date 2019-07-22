@@ -34,6 +34,7 @@ public abstract class AbstractProxyFactory implements IProxyFactory {
      *
      * @param commandMap - Map<String, CommandInfo>
      */
+    @Override
     public void init(Map<String, CommandInfo> commandMap) {
         this.commandMap = commandMap;
         this.allListCommand = new ArrayList<>();

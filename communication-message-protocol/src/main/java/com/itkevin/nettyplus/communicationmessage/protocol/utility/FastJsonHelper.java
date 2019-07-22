@@ -39,8 +39,9 @@ public final class FastJsonHelper {
 	public static final JSONArray EMPTY_ARRAY = new JSONArray(Collections.emptyList());
 	
 	public static <T> T toObject(String json, Class<T> clazz) {
-		if (json == null || json.length() == 0)
+		if (json == null || json.length() == 0) {
 			return null;
+		}
 
 		try {
 			return JSON.parseObject(json, clazz);
@@ -51,8 +52,9 @@ public final class FastJsonHelper {
 	}
 
 	public static <T> String toJson(T entity) {
-		if (entity == null)
+		if (entity == null) {
 			return null;
+		}
 
 		try {
 			return JSON.toJSONString(entity);
@@ -64,8 +66,9 @@ public final class FastJsonHelper {
 
 	@SuppressWarnings("unchecked")
 	public static <K, V> Map<K, V> toMap(String json) {
-		if (json == null || json.length() == 0)
+		if (json == null || json.length() == 0) {
 			return new HashMap<K, V>();
+		}
 
 		try {
 			return JSON.parseObject(json, HashMap.class);
@@ -104,7 +107,9 @@ public final class FastJsonHelper {
 	 * @return List<T>
 	 */
 	public static <T> List<T> toList(JSONArray array , Class<T> clazz) {
-		if(array == null || array.isEmpty()) return null;
+		if(array == null || array.isEmpty()) {
+			return null;
+		}
 		
 		try {
 			return array.toJavaList(clazz);
