@@ -19,7 +19,7 @@
     </parent>
 
     <properties>
-        <netty_version>4.1.12.Final</netty_version>
+        <netty_version>4.1.42.Final</netty_version>
         <!-- Common libs -->
         <fastjson_version>1.2.47</fastjson_version>
         <!-- Log libs -->
