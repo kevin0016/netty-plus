@@ -25,7 +25,7 @@
         <fastjson_version>1.2.47</fastjson_version>
         <netty_version>4.1.12.Final</netty_version>
         <!--  -->
-        <guava_version>24.1.1-android</guava_version>
+        <guava_version>29.0-jre</guava_version>
         <guice_version>4.2.0</guice_version>
         <reflections_version>0.9.11</reflections_version>
         <!-- Log libs -->
