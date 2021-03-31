@@ -27,7 +27,7 @@
         <!--  -->
         <commons_lang3_version>3.1</commons_lang3_version>
         <commons_lang_version>2.4</commons_lang_version>
-        <guava_version>24.1.1-jre</guava_version>
+        <guava_version>29.0-jre</guava_version>
         <reflections_version>0.9.11</reflections_version>
         <!-- Log libs -->
         <logback_version>1.2.3</logback_version>
