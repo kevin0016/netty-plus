@@ -21,7 +21,7 @@
     <properties>
         <netty_version>4.1.12.Final</netty_version>
         <!-- Common libs -->
-        <fastjson_version>1.2.47</fastjson_version>
+        <fastjson_version>1.2.83</fastjson_version>
         <!-- Log libs -->
         <logback_version>1.2.3</logback_version>
         <!-- Test libs -->
