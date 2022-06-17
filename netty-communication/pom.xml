@@ -20,7 +20,7 @@
 
     <properties>
         <message_protocol_version>0.0.1-SNAPSHOT</message_protocol_version>
-        <fastjson_version>1.2.47</fastjson_version>
+        <fastjson_version>1.2.83</fastjson_version>
         <netty_version>4.1.12.Final</netty_version>
         <logback_version>1.2.3</logback_version>
         <guava_version>24.1.1-jre</guava_version>
