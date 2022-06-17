@@ -22,7 +22,7 @@
         <message_protocol_version>0.0.1-SNAPSHOT</message_protocol_version>
         <andriod_version>4.1.1.4</andriod_version>
         <!-- Common libs -->
-        <fastjson_version>1.2.47</fastjson_version>
+        <fastjson_version>1.2.83</fastjson_version>
         <netty_version>4.1.12.Final</netty_version>
         <!--  -->
         <guava_version>24.1.1-android</guava_version>
